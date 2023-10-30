@@ -1,0 +1,4 @@
+.mainContent{
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 50px;
+}
