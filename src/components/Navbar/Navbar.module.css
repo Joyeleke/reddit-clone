@@ -1,0 +1,15 @@
+nav{
+    padding: 1rem 5rem;
+    grid-template-columns: 1fr 2fr;
+    background-color: white;
+    /* fix border shadow */
+    box-shadow: 5px 15px #f1f1f1; 
+
+}
+
+.logo{
+    width: 25px;
+    height: 25px;
+    margin: 0.5rem;
+}
+
