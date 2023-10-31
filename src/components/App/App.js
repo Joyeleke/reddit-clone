@@ -7,10 +7,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <section className={`${styles.mainContent} grid`}>
+      {/* should i make SubredditsFeed an aside */}
+      <main className={`${styles.mainContent} grid`}>
         <PostFeed />
-        <SubredditsFeed />
-      </section>
+        <SubredditsFeed/>
+      </main>
     </>
   );
 }

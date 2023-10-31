@@ -1,5 +1,8 @@
 .maindiv{
-    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 6fr;
+    padding: 1.5rem;
+    margin: 1.5rem 1.5rem 2rem;
+    background-color: white;
+    border: 1px solid black;
 }
