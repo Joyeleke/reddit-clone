@@ -1,8 +1,20 @@
-.maindiv{
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    padding: 1.5rem;
-    margin: 1.5rem 1.5rem 2rem;
-    background-color: white;
-    border: 1px solid black;
+.maindiv {
+  display: grid;
+  grid-template-columns: 1fr 14fr;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 1.5rem 2rem;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+
+.imgContainer{
+    width: 700px;
+    height: 500px;
+    margin: 3rem auto;
+}
+.contentImg {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
 }

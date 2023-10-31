@@ -1,32 +1,55 @@
-*{
+* {
   margin: 0;
   border: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #fcfcfc;
   font-family: "Segoe UI", sans-serif;
 }
 
-button{
+button {
   background-color: white;
 }
 
-hr{
-  background-color: #b8b7b7;
-  height: 1px;
+h1{
+  font-size: 1.5rem;
+  line-height: 3rem;
 }
 
-.grid{
+h2{
+  font-size: 1.25rem;
+}
+
+h3{
+  font-size: 1.075rem;
+  line-height: 2rem;
+}
+
+hr {
+  background-color: #b8b7b7;
+  height: 1px;
+  margin: 1rem 0;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.grid {
   display: grid;
 }
 
-.flex{
+.flex {
   display: flex;
   align-items: center;
 }
 
-.shadow{
-  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+.shadow {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.grey {
+  color: #717171;
 }

@@ -8,7 +8,8 @@
       {
         "ignore": [
           "grid-template-columns",
-          "display: grid"
+          "display: grid",
+          "object-fit"
         ]
       }
     ]

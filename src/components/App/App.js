@@ -7,7 +7,6 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* should i make SubredditsFeed an aside */}
       <main className={`${styles.mainContent} grid`}>
         <PostFeed />
         <SubredditsFeed/>

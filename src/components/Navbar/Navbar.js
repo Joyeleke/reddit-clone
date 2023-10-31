@@ -11,7 +11,7 @@ export default function Header() {
       <nav className="grid shadow">
         <article className="flex">
           <img src={logo} alt="reddit-logo" className={styles.logo} />
-          <h1><span style={colorBlue}>Reddit</span>Minimal</h1>
+          <h3><span style={colorBlue}>Reddit</span>Minimal</h3>
         </article>
         <SearchBar />
       </nav>

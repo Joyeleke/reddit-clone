@@ -4,16 +4,20 @@ import ExtraInfo from "../ExtraInfo/ExtraInfo";
 
 export default function IndividualPost() {
   return (
-    <>
-      <div className = {`${styles.maindiv} shadow`}>
-        <LikeCount />
-        <div>
-          <p>Title - Painters on the Brooklyn Bridge Cables</p>
-          <img src="https://placekitten.com/200/200" alt="temp"/>
-          <hr/>
-          <ExtraInfo/>
-        </div>
-      </div>
-    </>
+    <section className={`${styles.maindiv} shadow`}>
+      <LikeCount />
+      <article>
+        <h2>This is my beautiful commute to work!</h2>
+        <figure className={styles.imgContainer}>
+          <img
+            src="https://placekitten.com/200/200"
+            alt="temp"
+            className={styles.contentImg}
+          />
+        </figure>
+        <hr />
+        <ExtraInfo />
+      </article>
+    </section>
   );
 }
