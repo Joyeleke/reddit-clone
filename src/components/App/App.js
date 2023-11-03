@@ -1,6 +1,6 @@
 import styles from "./App.module.css";
 import Navbar from "../Navbar/Navbar";
-import PostFeed from "../PostFeed/PostFeed";
+import PostFeed from "../../features/PostFeed/PostFeed";
 import SubredditsFeed from "../SubredditsFeed/SubredditsFeed";
 
 function App() {

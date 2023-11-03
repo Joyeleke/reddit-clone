@@ -1,8 +1,7 @@
 
-
-export default function LikeCount() {
+export default function LikeCount({postCount}) {
   return (
-    <article className="grey">
+    <article className="grey text-center">
       <button>
         <svg
           height="20"
@@ -13,7 +12,7 @@ export default function LikeCount() {
           <path d="M12.781 2.375c-.381-.475-1.181-.475-1.562 0l-8 10A1.001 1.001 0 0 0 4 14h4v7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-7h4a1.001 1.001 0 0 0 .781-1.625l-8-10zM15 12h-1v8h-4v-8H6.081L12 4.601 17.919 12H15z" />
         </svg>
       </button>
-      <h3>1.5K</h3>
+      <h3>{postCount? postCount: 0}</h3>
       <button>
         <svg
           height="20"
