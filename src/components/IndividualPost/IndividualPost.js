@@ -18,7 +18,7 @@ export default function IndividualPost({post}) {
         </figure> */}
         {post.selftext}
         <hr />
-        <ExtraInfo postOwner={post.author} time={post.time} commentCount={post.num_comments} postOwnerAvatar={post.postOwnerAvatar}/>
+        <ExtraInfo postOwner={post.author} time={post.created_utc} commentCount={post.num_comments}/>
       </article>
     </section>
   );

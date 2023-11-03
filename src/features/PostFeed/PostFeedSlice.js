@@ -7,10 +7,8 @@ const loadPosts = createAsyncThunk("posts/loadPosts", async (subreddit) => {
 
     if (response.ok) {
       const json = await response.json();
-      console.log(json.data.children)
+      console.log(json.data.children);
       return json.data.children;
-    } else {
-      return [];
     }
   } catch (error) {
     console.log(error);
@@ -28,12 +26,8 @@ const loadSearchedPosts = createAsyncThunk(
 
       if (response.ok) {
         const json = await response.json();
-        console.log(json.data.children);
         return json.data.children;
-      } else {
-        console.log(response)
-        return [];
-      }
+      } 
     } catch (error) {
       console.log(error);
     }
@@ -47,7 +41,7 @@ const postSlice = createSlice({
     isLoading: false,
     hasFailed: false,
     searchLoading: false,
-    searchHasFailed: false
+    searchHasFailed: false,
   },
   extraReducers: (builder) => {
     builder
