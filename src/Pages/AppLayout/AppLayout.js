@@ -1,9 +1,9 @@
-import styles from "./App.module.css";
-import Navbar from "../Navbar/Navbar";
+import styles from "./AppLayout.module.css";
+import Navbar from "../../components/Navbar/Navbar";
 import PostFeed from "../../features/PostFeed/PostFeed";
-import SubredditsFeed from "../SubredditsFeed/SubredditsFeed";
+import SubredditsFeed from "../../components/SubredditsFeed/SubredditsFeed";
 
-function App() {
+function AppLayout() {
   return (
     <>
       <Navbar />
@@ -15,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppLayout;

@@ -1,7 +1,6 @@
 import IndividualPost from "../../components/IndividualPost/IndividualPost";
-import { useSelector, useDispatch } from "react-redux";
-import { loadPosts, selectPosts, isLoading } from "./PostFeedSlice";
-import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { selectPosts, isLoading } from "./PostFeedSlice";
 
 export default function Post() {
   const loading = useSelector(isLoading);

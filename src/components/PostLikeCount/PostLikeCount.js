@@ -1,5 +1,5 @@
 
-export default function LikeCount({postCount}) {
+export default function PostLikeCount({postCount}) {
   return (
     <article className="grey text-center">
       <button>
