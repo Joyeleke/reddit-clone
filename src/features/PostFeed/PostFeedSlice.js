@@ -7,7 +7,6 @@ const loadPosts = createAsyncThunk("posts/loadPosts", async (subreddit) => {
 
     if (response.ok) {
       const json = await response.json();
-      console.log(json.data.children);
       return json.data.children;
     }
   } catch (error) {

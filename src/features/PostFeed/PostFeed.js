@@ -6,8 +6,6 @@ export default function Post() {
   const loading = useSelector(isLoading);
   const posts = useSelector(selectPosts);
 
-  // consider adding a failure case
-
   if (loading) {
     return <p>isLoading...</p>;
   }
@@ -15,8 +13,10 @@ export default function Post() {
   return (
     <section>
       {posts.map((post, index) => (
-        <IndividualPost key={index} post={post.data} />
+        <IndividualPost key={index} post={post.data} id={index}/>
       ))}
     </section>
   );
 }
+
+ // consider adding a failure case

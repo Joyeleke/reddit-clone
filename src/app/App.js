@@ -8,7 +8,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<AppLayout />} />
-        <Route path="/here" element={<IndividualPostLayout />} />
+        <Route path="/post/:id" element={<IndividualPostLayout />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -4,13 +4,13 @@ import ExtraInfo from "../ExtraInfo/ExtraInfo";
 import PostTitleBar from "../PostTitleBar/PostTitleBar";
 import PostContent from "../PostContent/PostContent";
 
-export default function IndividualPost({ post }) {
+export default function IndividualPost({ id, post }) {
   return (
     // should i pass down
     <section className={`${styles.maindiv} shadow`}>
       <PostLikeCount postCount={post.ups} />
       <div>
-      <PostTitleBar title={post.title}/>
+      <PostTitleBar title={post.title} id={id}/>
       <PostContent content={post.selftext}/>
       <ExtraInfo
           postOwner={post.author}
